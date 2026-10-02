@@ -2,23 +2,52 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>漢カク | 公開情報</title>
+  <title>漢カク | 読めるけど書けない漢字を、すぐ確かめる</title>
+  <meta name="description" content="読みを入力すると漢字の候補が大きく表示され、書き順までその場で確かめられる漢字アプリ「漢カク」。" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="icon.png" />
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    .hero { text-align: center; }
+    .hero img { width: 128px; height: 128px; border-radius: 22%; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); }
+    .hero h1 { margin: 1rem 0 0.25rem; }
+    .lead { font-size: 1.15rem; margin: 0 0 2rem; }
+    .features { padding: 0; list-style: none; }
+    .features li { background: #fff; border-left: 4px solid #4a6741; border-radius: 5px; padding: 0.75rem 1rem; margin: 0.75rem 0; }
+    .features strong { display: block; }
+    footer { margin-top: 3rem; text-align: center; }
+    footer a { color: #4a6741; margin: 0 0.5rem; white-space: nowrap; }
+  </style>
 </head>
 <body>
 <main>
-  <h1>漢カク</h1>
-  <p>読めるけど書けない人向けの漢字アプリ「漢カク」の公開情報です。</p>
+  <header class="hero">
+    <img src="icon.png" alt="漢カクのアイコン" width="128" height="128" />
+    <h1>漢カク</h1>
+    <p class="lead">読めるけど書けない漢字を、すぐ確かめる。</p>
+  </header>
 
-  <nav>
-    <ul>
-      <li><a href="privacy-policy.html">プライバシーポリシー</a></li>
-      <li><a href="privacy-policy-en.html">Privacy Policy (English)</a></li>
-      <li><a href="dict/">辞書データ（JMdict / KANJIDIC2, CC BY-SA 4.0）</a></li>
-      <li><a href="kanjivg/">筆順データ（KanjiVG, CC BY-SA 3.0）</a></li>
+  <section>
+    <p>「読めるのに、いざ書こうとすると出てこない」。漢カクは、そんなときに読みを入力するだけで漢字を大きく表示し、書き順まで確かめられるアプリです。</p>
+    <ul class="features">
+      <li><strong>読みで探す</strong>ひらがなでもローマ字でも、読みを入力すると候補の漢字が並びます。</li>
+      <li><strong>大きく見る</strong>候補をタップすると、細かいところまで見える大きさで表示します。</li>
+      <li><strong>書き順を確かめる</strong>一画ずつ動くアニメーションで、筆順を確認できます。</li>
+      <li><strong>履歴から見返す</strong>調べた漢字は履歴に残るので、あとからもう一度確かめられます。</li>
     </ul>
-  </nav>
+  </section>
+
+  <footer>
+    <p>
+      <a href="privacy-policy.html">プライバシーポリシー</a>
+      <a href="privacy-policy-en.html">Privacy Policy</a>
+      <a href="https://forms.gle/o27r9vMLmQhXm8HU9" target="_blank" rel="noopener noreferrer">お問い合わせ</a>
+    </p>
+    <p class="meta">
+      辞書データは JMdict / KANJIDIC2（EDRDG, CC BY-SA 4.0）、筆順データは KanjiVG（Ulrich Apel, CC BY-SA 3.0）を利用しています。加工プログラムと加工後のデータは
+      <a href="https://github.com/juzow13/kankaku-oss">GitHub</a>で公開しています。
+    </p>
+  </footer>
 </main>
 </body>
 </html>
